@@ -1,0 +1,18 @@
+/** Inventory:
+Graphic Tee (3)
+Sunglasses (3)
+Sneakers (3)
+Leggings (3)
+Denim Jacket (3)
+**/
+
+CREATE TABLE inventory (price INTEGER PRIMARY KEY, item TEXT, quantity INTEGER);
+
+INSERT INTO inventory VALUES (15, "Graphic Tee", 3);
+INSERT INTO inventory VALUES (7, "Sunglasses", 3);
+INSERT INTO inventory VALUES (95, "Sneakers", 3);
+INSERT INTO inventory VALUES (11, "Leggings", 3);
+INSERT INTO inventory VALUES (35, "Denim Jacket", 3);
+SELECT * FROM inventory;
+SELECT * FROM inventory ORDER BY item;
+SELECT SUM(price) FROM inventory GROUP BY quantity
